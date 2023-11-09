@@ -1,0 +1,119 @@
+/*  Navbar **/
+
+.navbar {
+    background-color: rgba(255, 255, 252, 0.815); 
+    margin: 24px 24px 0px;
+    padding: 8px 16px;
+    width: 100%;
+    z-index: 3 !important;
+    border-radius: 20px;
+    width: 95%;
+    height: 55px;
+    position: relative;
+    box-shadow: inset 0px 0px 2px #fefefed1;
+  }
+
+  .nav-item .nav-link {
+    color: rgba(52, 71, 103, 0.788);
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+
+  .icon-nav{
+  opacity: 0.5;
+}
+
+.navbar-brand {
+  color: #344767;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
+
+}
+
+/* @media (max-width: 870px) {
+  .nav-item .nav-link  {
+      justify-content: flex-end;
+  }
+} */
+
+
+/* Main Content */
+.main-content {
+    margin-top: 100px; 
+}
+ 
+
+
+.form-check-input:checked {
+  background-color: #5E72E4;  
+  border-color: #5E72E4; 
+
+}
+
+
+.custom-download-btn {
+    background-color: #5E72E4; 
+    color: #fff; 
+    border-color: #5E72E4;
+    border-radius: 10px;
+    width: 140px;
+   
+}
+  /****  Sign in ***/
+  
+ 
+
+ 
+  .custom-card {
+    background: transparent !important;
+    border: none !important;
+    margin-left: 10px;
+     
+}
+
+.card-header h4{
+  font-weight: bold;
+}
+.card-header p{
+  
+  opacity: 0.6;
+}
+
+.card-footer a{
+  color:#5E72E4 !important;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+.card-header 
+.custom-card a {
+  color: #5E72E4 !important; 
+  font-weight: bold;
+  font-size: 14px;
+
+}
+  .sign-in-button{
+    color: #FFFFFF;
+    font-size: 15px;
+    background-color: #5E72E4;
+   width: 200px;
+   height: 42px;
+   font-weight: bolder;
+   
+  }
+
+input:hover{
+    border-color:#5E72E4 ;
+
+}
+
+  input::placeholder {
+    font-size: 16px;
+}
+.error-message {
+    color: red;
+  }
+  
+ 

@@ -1,0 +1,128 @@
+
+
+    <!--   Core JS Files   -->
+   
+
+<body class="">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<!-- Navbar -->
+<!-- <nav class="navbar navbar-expand-lg blur border-radius-lg top-0 z-index-3 shadow   " >
+
+<a class="navbar-brand font-weight-bolder ms-lg-0 ms-3" href="../pages/dashboard.html">
+    Argon Dashboard 2
+</a>
+<button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon mt-2">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+    </span>
+</button>
+<div class="collapse navbar-collapse" id="navigation">
+    <ul class="navbar-nav mx-auto ">
+        <li class="nav-item">
+            <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="../pages/dashboard.html">
+                <i class="fa fa-chart-pie opacity-6 text-dark me-1 icon-nav"></i>
+                Dashboard
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link me-2" href="../pages/profile.html">
+                <i class="fa fa-user opacity-6 text-dark me-1 icon-nav"></i>
+                Profile
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link me-2" href="../pages/sign-up.html">
+                <i class="fas fa-user-circle opacity-6 text-dark me-1 icon-nav"></i>
+                Sign Up
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link me-2" href="../pages/sign-in.html">
+                <i class="fas fa-key opacity-6 text-dark me-1 icon-nav"></i>
+                Sign In
+            </a>
+        </li>
+    </ul>
+    <ul class="navbar-nav d-lg-block d-none">
+        <li class="nav-item free-download">
+            <a href="https://www.creative-tim.com/product/argon-dashboard" class="btn btn-sm mb-0 me-1 btn-primary custom-download-btn">Free Download</a>
+        </li>
+    </ul>
+</div>
+</nav> -->
+
+<!-- End Navbar -->
+</div>
+</div>
+</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+     <br>
+    
+     
+<main class="main-content mt-5 ml-5 " >
+<section>
+<div class="page-header">
+<div class="container">
+<div class="row">
+<div class="col-xl-4 col-lg-5 col-md-8 d-flex flex-column mx-lg-0 mx-auto sign-in-box">
+<div class="card custom-card ml-2"> <!-- Added custom class and ml-2 for left margin -->
+    <div class="card-header pb-0 text-start custom-card">
+        <h4 class="font-weight-bolder" style="color: #344767">Sign In</h4>
+        <p class="mb-0">Enter your email and password to sign in</p>
+    </div>
+    <div class="card-body">
+        <form role="form" [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+
+            <div class="mb-3">
+                <input type="email" class="form-control form-control-lg inputs" placeholder="Email" aria-label="Email" formControlName="email">
+                <div *ngIf="showErrorMessages" class="error-message">{{ getErrorMessage('email') }}</div>
+                </div>
+                
+                <div class="mb-3">
+                <input type="password" class="form-control form-control-lg inputs" placeholder="Password" aria-label="Password" formControlName="password">
+                <div *ngIf="showErrorMessages" class="error-message">{{ getErrorMessage('password') }}</div>
+                </div>
+
+            <div class="form-check form-switch" style="margin-left: 5px;">
+                <input class="form-check-input" type="checkbox" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0 sign-in-button">Sign in</button>
+            </div>
+            </form>
+            
+    </div>
+    <div class="card-footer text-center pt-0 px-lg-2 px-1 custom-card">
+        <p class="mb-4 text-sm mx-auto">
+            Don't have an account?
+            <a href="javascript:;" class="text-primary text-gradient font-weight-bold" style="text-decoration: none; ">Sign up</a>
+        </p>
+    </div>
+</div>
+</div>
+<div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+<div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image:url(../../assets/image.png) ;
+    background-size: cover; border-radius:10px">
+    <span class="mask bg-gradient-primary opacity-6"></span>
+    <h4 class="mt-5 text-white  position-relative" style="font-size:24px !important">"Attention is the new currency"</h4>
+<p class="text-white position-relative col-12 text-center">The more effortless the writing looks, the more effort the writer actually put into the process.</p>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</section>
+</main>
+    
+    
+    </body>
